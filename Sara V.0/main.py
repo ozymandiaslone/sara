@@ -1,9 +1,40 @@
+#Imports
 from email import message_from_binary_file
 import smtplib
 from email.message import EmailMessage
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.multipart import MIMEMultipart
+from clientClass import *
+import pickle
+import random
+import os
+#email_addresses = ["saltsperkins@gmail.com", "tes1t@gmail.com"]
+with open("emails.txt", "r") as f:
+    email_addresses =f.readlines()
+potential_client_objs = list()
+for i in email_addresses:
+    potential_client_objs.append(ClientClass(i, [None]))
+with open("client_objects.pkl", "rb") as filehandler:
+    try:
+        client_objects = pickle.load(filehandler)
+    except EOFError:
+        client_objects = list()
+for i in potential_client_objs:
+    duplicate = False
+    for j in client_objects:
+        if i.email == j.email:
+            print("DUPLICATE")
+            duplicate = True
+    if not duplicate:
+        client_objects.append(i)
+        print("Added Client object with email: "+ i.email)
+with open("client_objects.pkl", "wb") as write_client_data:
+    pickle.dump(client_objects, write_client_data)
+
+
+
+
 
 msg_content = """
 Hi! My name is Sara, and I have been creating professional YouTube thumbnails for over a year now, not to mention years of experience in Photoshop. I would love to 
@@ -14,8 +45,6 @@ If you ever need thumbnails, please don't hesitate to send me an E-mail describi
 """
 msg_subject = "Affordable professional thumbnails"
 msg_from = "Sara's Thumbnails"
-msg_recipients = ["saltsperkins@gmail.com"]
-
 def send_email(msg_content, msg_subject, msg_from, msg_to):
     msg = EmailMessage()
     msg.set_content(msg_content)
@@ -40,5 +69,3 @@ def send_email(msg_content, msg_subject, msg_from, msg_to):
     server.login("saraliminal@gmail.com", "Yutan#123")
     server.send_message(msg)
     server.quit()
-for i in msg_recipients:
-    send_email(msg_content, msg_subject, msg_from, i)

@@ -9,7 +9,8 @@ from ClientClass import *
 import pickle
 import random
 import os
-#email_addresses = ["saltsperkins@gmail.com", "tes1t@gmail.com"]
+
+#Opens the txt file, and cross-checks the emails in the file with Client Objects, creating a new client object if one does not exist for an email address.
 with open("emails.txt", "r") as f:
     email_addresses =f.readlines()
 potential_client_objs = list()
@@ -35,7 +36,7 @@ with open("client_objects.pkl", "wb") as write_client_data:
 
 
 
-
+#Placeholder potential message content
 msg_content = """
 Hi! My name is Sara, and I have been creating professional YouTube thumbnails for over a year now, not to mention years of experience in Photoshop. I would love to 
 start working with your channel! I will attatch some files to serve as examples of what to expect. I am available nearly 24/7, and almost always deliver within 24 hours.
@@ -45,6 +46,8 @@ If you ever need thumbnails, please don't hesitate to send me an E-mail describi
 """
 msg_subject = "Affordable professional thumbnails"
 msg_from = "Sara's Thumbnails"
+
+#Function responsible for sending emails
 def send_email(msg_content, msg_subject, msg_from, msg_to):
     msg = EmailMessage()
     msg.set_content(msg_content)
@@ -52,6 +55,7 @@ def send_email(msg_content, msg_subject, msg_from, msg_to):
     msg['From'] = msg_from
     msg['To'] = msg_to
 
+    #Attaching example thumnnails as image files to the email
     with open('./thumbnails/thumb1.png', 'rb') as f:
         img_data = f.read()
     msg.add_attachment(img_data, maintype='image',subtype='png')

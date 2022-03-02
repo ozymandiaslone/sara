@@ -2,4 +2,4 @@ S.A.R.A (SARA) - Social Autonomous Response Applications - Applications capable 
 
 SARA systems have potential applications in any sales position, and additionally in any logistics or man in the middle services. Although their success rate in sales would likely be much lower compared to a human analogue, a single SARA system could potentially be thousands of times more productive than humans due to the sheer volume of work they can do in short periods of time. A single SARA system could conceivably replace thousands of human workers.
 
-Implementation #1: Youtube thumbnail creation. A simple Sara system can be implemented by connecting small youtubers with fiverr thumnail creators. It is likely even possible to completely automate the process, with one human's output being fed directly into the other human's input.
+Implementation #1: Youtube thumbnail creation. A simple SARA system can be implemented by connecting small youtubers with fiverr thumnail creators. It is likely even possible to completely automate the process, with one human's output being fed directly into the other human's input.

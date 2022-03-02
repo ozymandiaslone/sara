@@ -7,7 +7,7 @@ Implementation #1: Youtube thumbnail creation. A simple SARA system can be imple
 _____________________________________________________________
 
 9.5 step initial SARA system
- - This initial Sara V.0 likely won't be operable without human oversight at first, but that eventually be changed.
+ - This initial Sara V.0 likely won't be operable without human oversight at first, but that could eventually be changed.
 
 List of steps/requirements.
 1) Obtain list of Youtubers' business email addresses.

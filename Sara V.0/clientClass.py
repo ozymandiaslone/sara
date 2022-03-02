@@ -1,4 +1,4 @@
 class ClientClass:
-    def __init__(self, email, name):
+    def __init__(self, email, history):
         self.email = email
-        self.name = name
+        self.history = history

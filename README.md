@@ -11,13 +11,13 @@ _____________________________________________________________
 
 List of steps/requirements.
 1) Obtain list of Youtubers' business email addresses.
- - This actually presents a quite a big problem, as YouTube requires you to complete a ReCaptcha to reveal each address, and additionally you are limited to 5 addresses revealed per day.
-3) Create a Client class object for each contact.
-4) Periodically check & decide whether or not to send an email to each client object, and decide what message to send.
-5) Await inbound emails.
-6) Parse message content of received emails. Decide whether to pass it along or flag a human.
-7) Obtain list of Fiverr providers
-8) Connect the client's thumnail request with a Fiverr provider. 7.5) Send thumbnail request to the provider.
-9) Periodically check & receive finished product from the provder.
-10) Deliver completed thumbnail(s) to the client along with a clickable payable invoice link.
+    - This actually presents a quite a big problem, as YouTube requires you to complete a ReCaptcha to reveal each address, and additionally you are limited to 5 addresses revealed per day.
+2) Create a Client class object for each contact.
+3) Periodically check & decide whether or not to send an email to each client object, and decide what message to send.
+4) Await inbound emails.
+5) Parse message content of received emails. Decide whether to pass it along or flag a human.
+6) Obtain list of Fiverr providers
+7) Connect the client's thumnail request with a Fiverr provider. 7.5) Send thumbnail request to the provider.
+8) Periodically check & receive finished product from the provder.
+9) Deliver completed thumbnail(s) to the client along with a clickable payable invoice link.
  

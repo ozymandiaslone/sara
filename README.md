@@ -1,0 +1,2 @@
+S.A.R.A (Sara) - Social Autonomous Response Application - will be an application capable of generating profit based on a series of digital human interactions. In most cases, the humans interacting with Sara would not even know that they are going through an autonomous middle man.
+Implementation #1: Youtube thumbnail creation. A simple Sara system can be implemented by connecting small youtubers with fiverr thumnail creators. It is likely even possible to completely automate the process, with one human's output being fed directly into the other human's input.

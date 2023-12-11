@@ -1,3 +1,9 @@
+# This is all deprecated
+I spent most of my time working on this project creating a very bad method of bypassing Google's captchas ( it only worked like 1/4 of the time ).
+In 2023 I just think its interesting that I sorta predicted the type of value which can now be created easily by LLMs haha :)
+
+
+
 S.A.R.A (SARA) - Social Autonomous Response Applications - Applications capable of generating profit based on a series of digital human interactions. In most cases, the humans interacting with a SARA system would not even know that they are going through an autonomous middle man.
 
 SARA systems have potential applications in any sales position, and additionally in any logistics or man in the middle services. Although their success rate in sales would likely be much lower compared to a human analogue, a single SARA system could potentially be thousands of times more productive than humans due to the sheer volume of work they can do in short periods of time. A single SARA system could conceivably replace thousands of human workers.
